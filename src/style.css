@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #0158c7;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+#app {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Diagonal accent stripes — mimics the banner's left-side light-blue streaks */
+.accent {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.accent::before,
+.accent::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transform-origin: top left;
+}
+
+/* Wide outer streak */
+.accent::before {
+  left: -10%;
+  width: 30%;
+  background: linear-gradient(
+    160deg,
+    #0280ff 0%,
+    #016eea 50%,
+    transparent 100%
+  );
+  transform: skewX(-12deg);
+}
+
+/* Narrow inner highlight */
+.accent::after {
+  left: 2%;
+  width: 12%;
+  background: linear-gradient(
+    160deg,
+    #0290ff 0%,
+    #0280ff 40%,
+    transparent 100%
+  );
+  opacity: 0.6;
+  transform: skewX(-12deg);
+}
+
+/* Center content */
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #ffffff;
+}
+
+.title {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
