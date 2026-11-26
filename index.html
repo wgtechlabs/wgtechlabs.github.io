@@ -39,22 +39,27 @@
         <svg class="streaks-narrow" viewBox="0 0 390 440" preserveAspectRatio="xMaxYMin meet" aria-hidden="true">
           <path d="M470 88C200 130 190 270 470 352" fill="none" stroke="#1a86ff" stroke-width="72" stroke-linecap="round" />
         </svg>
-        <div class="frame">
+        <div class="frame hero-layout">
           <div class="hero-copy">
             <img class="hero-mark" src="/logo.svg" alt="" width="810" height="455" />
-            <h1 id="hero-title">Libraries, support tools, and shipping conventions.</h1>
-            <p class="hero-line">Your partner in open-source innovation.</p>
-            <a class="button" href="#work">See the work</a>
+            <p class="eyebrow">WG Technology Labs · Open source</p>
+            <h1 id="hero-title">Useful tools for building in the open.</h1>
+            <p class="hero-line">Explore libraries, community support projects, and tools for shipping software.</p>
+            <a class="button" href="#work">Explore the work <span aria-hidden="true">↘</span></a>
           </div>
+          <nav class="hero-index" aria-label="Explore projects by category">
+            <p class="index-label">Explore by focus</p>
+            <a href="#clean"><span>Clean</span><span aria-hidden="true">↗</span></a>
+            <a href="#libraries"><span>Libraries</span><span aria-hidden="true">↗</span></a>
+            <a href="#support"><span>Support</span><span aria-hidden="true">↗</span></a>
+            <a href="#shipping"><span>Shipping</span><span aria-hidden="true">↗</span></a>
+          </nav>
         </div>
       </section>
 
       <section class="sponsor">
         <p>
           <span>Sponsored by</span>
-          <a href="https://unthread.io">
-            <img src="/unthread.svg" alt="Unthread" width="2507" height="603" />
-          </a>
           <a href="https://www.docker.com">
             <img src="/docker.svg" alt="Docker" width="1250" height="268" />
           </a>
@@ -67,6 +72,7 @@
       <section id="work" class="work" aria-labelledby="work-title">
         <div class="frame">
         <div class="work-intro">
+          <p class="section-kicker">Selected projects</p>
           <h2 id="work-title">Published in the open</h2>
           <p class="lede">
             A selection from the
@@ -75,7 +81,8 @@
           </p>
         </div>
 
-        <div class="group">
+        <div class="groups">
+        <div class="group" id="clean">
           <h3>Clean</h3>
           <ul class="catalog">
             <li>
@@ -151,7 +158,7 @@
           </ul>
         </div>
 
-        <div class="group">
+        <div class="group" id="libraries">
           <h3>Libraries</h3>
           <ul class="catalog">
             <li>
@@ -197,7 +204,7 @@
           </ul>
         </div>
 
-        <div class="group">
+        <div class="group" id="support">
           <h3>Support</h3>
           <ul class="catalog">
             <li>
@@ -233,7 +240,7 @@
           </ul>
         </div>
 
-        <div class="group">
+        <div class="group" id="shipping">
           <h3>Shipping</h3>
           <ul class="catalog">
             <li>
@@ -264,6 +271,7 @@
           <a href="https://github.com/wgtechlabs/ph-scam-db">PH Scam DB</a>,
           scam phone-number intelligence for the Philippines.
         </p>
+        </div>
         </div>
       </section>
     </main>
