@@ -9,7 +9,18 @@
 
 ## 💎 Sponsors & Partners
 
-Thank you to [Docker](https://www.docker.com/) and [Railway](https://railway.com/) for supporting this work.
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <a href="https://railway.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./.github/assets/sponsors/railway-logotype-light.svg"><img src="./.github/assets/sponsors/railway-logotype-dark.svg" width="150" alt="Railway logo"></picture></a>
+      <p>Cloud platform for deploying and hosting apps, databases, and infrastructure.</p>
+    </td>
+    <td width="50%" align="center">
+      <a href="https://www.docker.com"><img src="./.github/assets/sponsors/docker-logo.svg" width="150" alt="Docker logo"></a>
+      <p>Platform for building, sharing, and running containerized applications.</p>
+    </td>
+  </tr>
+</table>
 
 ## ✨ Features
 
